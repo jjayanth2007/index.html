@@ -182,7 +182,41 @@ padding-top: 20px;
 
         </div>
   </div>
+ <script>
+    const messages = [
+      "Welcome to the talking website.",
+      "This message will repeat forever.",
+      "You can customize what I say.",
+      "JavaScript is awesome!"
+    ];
 
+    let index = 0;
+
+    function speakMessage() {
+      if (!('speechSynthesis' in window)) {
+        alert("Sorry, your browser doesn't support speech synthesis.");
+        return;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(messages[index]);
+      utterance.rate = 1;  // speed
+      utterance.pitch = 1; // tone
+
+      utterance.onend = () => {
+        index = (index + 1) % messages.length; // Go to next message
+        // Add delay if needed before next message
+        setTimeout(speakMessage, 1000); // 1 second delay
+      };
+
+      speechSynthesis.speak(utterance);
+    }
+
+    window.onload = function () {
+      // Cancel any existing speech queue (for safety)
+      speechSynthesis.cancel();
+      speakMessage(); // Start speaking
+    };
+  </script>
               
 
 
